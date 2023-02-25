@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controler-->
+        <scene sceneID="u4C-O3-9fI">
+            <objects>
+                <viewController storyboardIdentifier="MapViewControler" id="5d0-ax-roD" customClass="MapViewControler" customModule="Travel_app_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t78-1V-cKh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CRz-Uf-wk8">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" red="0.1058823529" green="0.1957857013" blue="0.19250011440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </mapView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Z1E-0a-4oN">
+                                <rect key="frame" x="5" y="593" width="404" height="210"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="N2k-ek-oeZ"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j4z-Q1-hVf">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sP0-Qk-dUQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b1g-db-Agk">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CRz-Uf-wk8" firstAttribute="leading" secondItem="3UD-W5-zkd" secondAttribute="leading" id="DiE-pS-Yyj"/>
+                            <constraint firstItem="3UD-W5-zkd" firstAttribute="bottom" secondItem="Z1E-0a-4oN" secondAttribute="bottom" constant="10" id="NFV-mW-qt5"/>
+                            <constraint firstItem="3UD-W5-zkd" firstAttribute="bottom" secondItem="CRz-Uf-wk8" secondAttribute="bottom" id="P9z-OH-gw0"/>
+                            <constraint firstItem="3UD-W5-zkd" firstAttribute="trailing" secondItem="CRz-Uf-wk8" secondAttribute="trailing" id="jVt-a5-M7h"/>
+                            <constraint firstItem="CRz-Uf-wk8" firstAttribute="top" secondItem="3UD-W5-zkd" secondAttribute="top" id="rrz-02-uQw"/>
+                            <constraint firstItem="3UD-W5-zkd" firstAttribute="trailing" secondItem="Z1E-0a-4oN" secondAttribute="trailing" constant="5" id="uAN-or-oNH"/>
+                            <constraint firstItem="Z1E-0a-4oN" firstAttribute="leading" secondItem="3UD-W5-zkd" secondAttribute="leading" constant="5" id="zbS-CO-nNn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3UD-W5-zkd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="safari" catalog="system" id="XFa-mp-SAn"/>
+                    <navigationItem key="navigationItem" id="4XJ-rd-3Ih"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Z1E-0a-4oN" id="WgE-nb-Lzt"/>
+                        <outlet property="mapView" destination="CRz-Uf-wk8" id="1HU-OR-Pep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yYo-tV-X9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2171.0144927536235" y="-176.11607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="CH2-9p-lA5">
+            <objects>
+                <navigationController restorationIdentifier="MapViewControlerNav" storyboardIdentifier="MapViewControlerNav" automaticallyAdjustsScrollViewInsets="NO" id="V55-9c-eUs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="safari" catalog="system" id="bVG-xZ-7vP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9N3-cf-Yq0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5d0-ax-roD" kind="relationship" relationship="rootViewController" id="jKF-tC-eTS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQ9-bf-2Rd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260.8695652173915" y="-176.11607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="safari" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cUO-QO-MmR">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="3L8-Kz-ZdI" customClass="ViewController" customModule="Travel_app_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3X6-lC-Kq3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login" translatesAutoresizingMaskIntoConstraints="NO" id="Ag7-z1-97V">
+                                <rect key="frame" x="0.0" y="-1360" width="414" height="2256"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nv-yw-r3c">
+                                <rect key="frame" x="264" y="762" width="120" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.61076081940000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="eGS-Bv-Cq9"/>
+                                    <constraint firstAttribute="height" constant="70" id="ekF-vY-jbZ"/>
+                                </constraints>
+                                <state key="normal" image="arrow.right" catalog="system"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="3L8-Kz-ZdI" eventType="touchUpInside" id="uWP-g8-T5D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Ag7-z1-97V" secondAttribute="bottom" constant="-34" id="4SG-PV-UGm"/>
+                            <constraint firstItem="Ag7-z1-97V" firstAttribute="leading" secondItem="88z-T2-MEa" secondAttribute="leading" id="IRr-vA-w82"/>
+                            <constraint firstItem="88z-T2-MEa" firstAttribute="bottom" secondItem="8Nv-yw-r3c" secondAttribute="bottom" constant="30" id="OcX-eI-fBf"/>
+                            <constraint firstItem="88z-T2-MEa" firstAttribute="trailing" secondItem="Ag7-z1-97V" secondAttribute="trailing" id="ZXq-tO-oig"/>
+                            <constraint firstItem="88z-T2-MEa" firstAttribute="trailing" secondItem="8Nv-yw-r3c" secondAttribute="trailing" constant="30" id="wdi-Us-F5D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="88z-T2-MEa"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="8Nv-yw-r3c" id="19x-jQ-cmn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E95-Tq-4qS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186" y="12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Login" width="498" height="1128"/>
+        <image name="arrow.right" catalog="system" width="64" height="48"/>
+    </resources>
+</document>

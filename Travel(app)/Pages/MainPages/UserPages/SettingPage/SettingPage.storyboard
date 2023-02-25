@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting Page-->
+        <scene sceneID="95C-5G-Cgh">
+            <objects>
+                <viewController storyboardIdentifier="SettingPage" id="drO-mv-liv" customClass="SettingPage" customModule="Travel_app_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BC0-9s-8qs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQX-1E-BBd">
+                                <rect key="frame" x="40" y="74" width="334" height="32"/>
+                                <segments>
+                                    <segment title="Green"/>
+                                    <segment title="Yellow"/>
+                                    <segment title="System"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.61537814140000002" green="0.55896323920000002" blue="0.8882171512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="colorControl:" destination="drO-mv-liv" eventType="valueChanged" id="bXj-Sk-Z6T"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMu-y2-u4r">
+                                <rect key="frame" x="294" y="782" width="100" height="60"/>
+                                <color key="backgroundColor" red="0.61537814140000002" green="0.55896323920000002" blue="0.8882171512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Wgn-Bc-wzM"/>
+                                    <constraint firstAttribute="width" constant="100" id="ei9-ep-qeY"/>
+                                </constraints>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="save_button:" destination="drO-mv-liv" eventType="touchUpInside" id="o8u-LW-AhQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lQX-1E-BBd" firstAttribute="leading" secondItem="wFA-Kk-LOu" secondAttribute="leading" constant="40" id="0hQ-yv-ymf"/>
+                            <constraint firstItem="wFA-Kk-LOu" firstAttribute="bottom" secondItem="HMu-y2-u4r" secondAttribute="bottom" constant="20" id="NR6-Ly-VM0"/>
+                            <constraint firstItem="lQX-1E-BBd" firstAttribute="centerX" secondItem="BC0-9s-8qs" secondAttribute="centerX" id="Oe8-fA-BY9"/>
+                            <constraint firstItem="wFA-Kk-LOu" firstAttribute="trailing" secondItem="HMu-y2-u4r" secondAttribute="trailing" constant="20" id="jSd-Ff-c3j"/>
+                            <constraint firstItem="wFA-Kk-LOu" firstAttribute="trailing" secondItem="lQX-1E-BBd" secondAttribute="trailing" constant="40" id="m8i-yL-CMR"/>
+                            <constraint firstItem="lQX-1E-BBd" firstAttribute="top" secondItem="wFA-Kk-LOu" secondAttribute="top" constant="30" id="snj-mb-tnz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wFA-Kk-LOu"/>
+                    </view>
+                    <connections>
+                        <outlet property="saveButton" destination="HMu-y2-u4r" id="Xu7-yi-t1E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65m-vp-Nxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-410" y="154"/>
+        </scene>
+    </scenes>
+</document>

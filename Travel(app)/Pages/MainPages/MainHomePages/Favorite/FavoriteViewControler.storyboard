@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorite View Controler-->
+        <scene sceneID="iLL-MU-ez9">
+            <objects>
+                <viewController storyboardIdentifier="FavoriteViewControler" id="dop-j4-IO3" customClass="FavoriteViewControler" customModule="Travel_app_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anX-8P-Mun">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-4d-llq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="J4y-4d-llq" firstAttribute="top" secondItem="yP8-aF-thW" secondAttribute="top" id="7Ji-RY-FiN"/>
+                            <constraint firstItem="yP8-aF-thW" firstAttribute="trailing" secondItem="J4y-4d-llq" secondAttribute="trailing" id="ZAY-dA-4hi"/>
+                            <constraint firstItem="yP8-aF-thW" firstAttribute="bottom" secondItem="J4y-4d-llq" secondAttribute="bottom" id="aYv-cy-YrC"/>
+                            <constraint firstItem="J4y-4d-llq" firstAttribute="leading" secondItem="yP8-aF-thW" secondAttribute="leading" id="eSw-qv-kVb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yP8-aF-thW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="buz-of-SfH"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6yk-gi-m1V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.73913043478262" y="152.67857142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pwB-GK-vRZ">
+            <objects>
+                <navigationController restorationIdentifier="FavoriteViewControlerNav" storyboardIdentifier="FavoriteViewControlerNav" automaticallyAdjustsScrollViewInsets="NO" id="b1p-pU-shn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="bookmark" catalog="system" id="DVu-5R-wCr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Bu-PA-Y13">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dop-j4-IO3" kind="relationship" relationship="rootViewController" id="QVl-r6-wGJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EI4-6d-e2U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="152.67857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark" catalog="system" width="56" height="64"/>
+    </resources>
+</document>
