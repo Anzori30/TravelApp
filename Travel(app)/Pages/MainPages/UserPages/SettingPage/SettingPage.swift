@@ -17,8 +17,6 @@ class SettingPage: UIViewController {
         super.viewDidLoad()
         //bacground color
         bacgroundColor(view: view)
-        //corner radius
-        BorderRadius(to: saveButton)
     }
  
     @IBAction func colorControl(_ sender: UISegmentedControl) {
@@ -28,10 +26,12 @@ class SettingPage: UIViewController {
              defaults.set("0", forKey: "backgroundColor")
             sender.selectedSegmentTintColor = .red
              hasBackgroundColorChanged = true
+           (tabBarController as? TabBarViewControler)?.start()
         case 1:
             view.backgroundColor = UIColor(red: 0.992, green: 0.91, blue: 0.816, alpha: 1)
             defaults.set("1", forKey: "backgroundColor")
              hasBackgroundColorChanged = true
+           (tabBarController as? TabBarViewControler)?.start()
         case 2:
             view.backgroundColor = UIColor.systemBackground
             defaults.set("2", forKey: "backgroundColor")

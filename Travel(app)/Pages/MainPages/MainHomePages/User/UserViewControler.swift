@@ -25,8 +25,6 @@ class UserViewControler: UIViewController {
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
-        //cornerRadiusUser
-        cornerRadiusUser(to: userImage)
        
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -34,6 +32,8 @@ class UserViewControler: UIViewController {
     }
   
 }
+
+
 extension UserViewControler: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         listName.count
@@ -45,6 +45,8 @@ extension UserViewControler: UITableViewDataSource{
         return cell
     }
 }
+
+
 extension UserViewControler: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let value = listName[indexPath.row]

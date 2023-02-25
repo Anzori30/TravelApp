@@ -21,19 +21,11 @@ class VerifyViewControler: UIViewController {
     override func viewDidLoad() {
     //gradiants
     ViewtopGradiant(imageTopView: onImageView)
-    //border
-    TextField1.borderStyle = .none
-    TextField2.borderStyle = .none
-    TextField3.borderStyle = .none
-    TextField4.borderStyle = .none
     // button border
     textField(to: TextField1)
     textField(to: TextField2)
     textField(to: TextField3)
     textField(to: TextField4)
-    //corner radius
-    BorderRadius(to: verifyButton)
-  
     }
   
     

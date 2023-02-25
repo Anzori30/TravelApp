@@ -27,19 +27,11 @@ class RegistrationViewControler: UIViewController {
     @IBOutlet weak var stack_view4: UIStackView!
     @IBOutlet weak var stack_view5: UIStackView!
     @IBOutlet weak var stack_view6: UIStackView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
          //gradiants
           ViewtopGradiant(imageTopView: onImageView)
-           //border
-           firstnameTextField.borderStyle = .none
-           lastnameTextField.borderStyle = .none
-          phoneTextField.borderStyle = .none
-           emailTextField.borderStyle = .none
-           passwordTextField.borderStyle = .none
-           repeatPasswordTextField.borderStyle = .none
-           //corner radius
-            BorderRadius(to: registerButton)
           // bottom borders
           addBottomBorder(to: stack_view1)
           addBottomBorder(to: stack_view2)

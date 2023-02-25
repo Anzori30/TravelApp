@@ -35,19 +35,11 @@ class LogInViewControler: UIViewController {
         // borders
         addBottomBorder(to: stack_Border)
         addBottomBorder(to: starck2_Border)
-        userName_textField.borderStyle = .none
-        password_textField.borderStyle = .none
-        //corner radius
-        BorderRadius(to: logIn_Button)
-        BorderRadius(to: faceId_Button)
-        BorderRadius(to: apple_Button)
-        BorderRadius(to: google_Button)
-        BorderRadius(to: facebook_BUtton)
     }
     
     @IBAction func ForgotPasword(_ sender: Any) {
         let vc = UIStoryboard(name: "ForgotPasswordViewControler", bundle: nil).instantiateViewController(identifier: "ForgotPasswordViewControler") as! ForgotPasswordViewControler
-                      navigationController?.pushViewController(vc, animated: true)
+            navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func Login_button(_ sender: Any) {

@@ -17,7 +17,6 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.isTranslucent = true
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        nextButton.layer.cornerRadius = 20
     }
 
     @IBAction func nextButton(_ sender: Any) {

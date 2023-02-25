@@ -21,8 +21,7 @@ class TableViewCell: UITableViewCell {
         selectedBackground.backgroundColor = UIColor.init(red: 0.141, green: 0.267, blue: 0.267, alpha: 1)
         selectedBackground.layer.cornerRadius = 10.0
          selectedBackgroundView = selectedBackground
-        //cornerRadius
-        cornerRadiusUser(to: nextButton)
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

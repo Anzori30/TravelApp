@@ -19,14 +19,10 @@ class ForgotPasswordViewControler: UIViewController {
     @IBOutlet private weak var stackView: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         //gradiant
         ViewtopGradiant(imageTopView: onImageView)
         // borders
         addBottomBorder(to: stackView)
-        emailField.borderStyle = .none
-        //corner radius
-        BorderRadius(to: sendCode_button)
     }
 
     @IBAction func SendCode(_ sender: Any) {

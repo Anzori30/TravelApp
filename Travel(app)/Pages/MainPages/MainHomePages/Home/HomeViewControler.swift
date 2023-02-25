@@ -19,21 +19,29 @@ class HomeViewControler: UIViewController {
         collection.dataSource = self
         collection.delegate = self
         collection.isPagingEnabled = true
-        //cornerRadiusUser
-        cornerRadiusUser(to: userImage)
         // bottom borders
         addBottomBorder(to: stackView)
     }
-    override func viewDidAppear(_ animated: Bool) {
-          //bacground color
-           bacgroundColor(view: view)
-      }
+    override func viewWillAppear(_ animated: Bool) {
+       //bacground color
+        bacgroundColor(view: view)
+    }
+
+    
+    
     func calculateItemSize(for collectionView: UICollectionView) -> CGSize {
         let itemWidth = collectionView.frame.width - 80
         let itemHeight = collectionView.frame.height
         return CGSize(width: itemWidth, height: itemHeight)
     }
+    
+    
+    
 }
+
+
+
+
 extension HomeViewControler: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         20

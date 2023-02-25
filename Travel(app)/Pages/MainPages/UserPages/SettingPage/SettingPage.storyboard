@@ -27,7 +27,7 @@
                                     <action selector="colorControl:" destination="drO-mv-liv" eventType="valueChanged" id="bXj-Sk-Z6T"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMu-y2-u4r">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMu-y2-u4r" customClass="buttonStyle" customModule="Travel_app_" customModuleProvider="target">
                                 <rect key="frame" x="294" y="782" width="100" height="60"/>
                                 <color key="backgroundColor" red="0.61537814140000002" green="0.55896323920000002" blue="0.8882171512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>

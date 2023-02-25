@@ -13,9 +13,11 @@ class TabBarViewControler: UITabBarController{
     @IBOutlet weak var tabbar: UITabBar!
     override func viewDidLoad() {
         super.viewDidLoad()
+        start()
     }
-    override func viewDidAppear(_ animated: Bool) {
-        tabBarColor(tab: tabbar)
-    }  
+   func start(){
+            tabBarColor(tab: tabbar)
+    }
+   
 }
 
