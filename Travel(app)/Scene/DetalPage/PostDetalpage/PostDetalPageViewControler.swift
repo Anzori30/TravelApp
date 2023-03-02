@@ -31,7 +31,6 @@ class PostDetalPageViewControler: UIViewController{
         print("deinited PostDetalPageViewControler")
     }
 }
-
 extension PostDetalPageViewControler: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         20
