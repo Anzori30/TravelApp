@@ -39,6 +39,7 @@ class SettingPage: UIViewController {
         default :
             break
         }
+       
     }
     
     @IBAction func save_button(_ sender: Any) {
@@ -61,4 +62,7 @@ class SettingPage: UIViewController {
        
     }
     
+    deinit {
+        print("deinited SettingPage")
+    }
 }

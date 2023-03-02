@@ -57,7 +57,10 @@ extension HomeViewControler: UICollectionViewDataSource{
     
 }
 extension HomeViewControler: UICollectionViewDelegate{
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "PostDetalPageViewControler", bundle: nil).instantiateViewController(identifier: "PostDetalPageViewControler") as! PostDetalPageViewControler
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 extension HomeViewControler: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

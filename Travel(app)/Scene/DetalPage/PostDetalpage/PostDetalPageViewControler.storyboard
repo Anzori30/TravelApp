@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Post Detal Page View Controler-->
+        <scene sceneID="OEQ-rm-ZGv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dUQ-wP-gAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="PostDetalPageViewControler" id="Smg-Jv-hqp" customClass="PostDetalPageViewControler" customModule="Travel_app_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ub-Bn-iRZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Android-Phone-Wallpapers-Most-Android-Phone-Wallpaper-Download" translatesAutoresizingMaskIntoConstraints="NO" id="3Mz-7q-AKN">
+                                <rect key="frame" x="0.0" y="-352" width="414" height="1600"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pI6-kf-uvU">
+                                <rect key="frame" x="0.0" y="412" width="414" height="450"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YGQ-xP-xXH">
+                                        <rect key="frame" x="30" y="80" width="138" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Jv-gz-oKs">
+                                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="City">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ub8-FV-N0c">
+                                                <rect key="frame" x="60" y="0.0" width="78" height="30"/>
+                                                <state key="normal" title="Destination">
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AA3-Md-KPE">
+                                        <rect key="frame" x="30" y="120" width="384" height="330"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="783-UP-9Lg">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="596"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SdZ-La-Yid">
+                                                <rect key="frame" x="0.0" y="10" width="384" height="310"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="310" id="qd8-15-AM9"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qdt-ay-eVC">
+                                                    <size key="itemSize" width="50" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Jib-Xw-6Ck">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cOm-Il-D5d">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </collectionViewCellContentView>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="SdZ-La-Yid" firstAttribute="leading" secondItem="AA3-Md-KPE" secondAttribute="leading" id="1ok-gx-FGt"/>
+                                            <constraint firstAttribute="bottom" secondItem="783-UP-9Lg" secondAttribute="bottom" constant="-176" id="3Ii-De-5zX"/>
+                                            <constraint firstItem="783-UP-9Lg" firstAttribute="top" secondItem="AA3-Md-KPE" secondAttribute="top" id="C7w-WG-PBJ"/>
+                                            <constraint firstItem="783-UP-9Lg" firstAttribute="leading" secondItem="AA3-Md-KPE" secondAttribute="leading" id="Hf2-Wi-G1W"/>
+                                            <constraint firstAttribute="trailing" secondItem="783-UP-9Lg" secondAttribute="trailing" id="QAD-Ch-eg3"/>
+                                            <constraint firstAttribute="bottom" secondItem="SdZ-La-Yid" secondAttribute="bottom" constant="100" id="XjC-ig-drx"/>
+                                            <constraint firstItem="783-UP-9Lg" firstAttribute="centerX" secondItem="AA3-Md-KPE" secondAttribute="centerX" id="ao9-q8-ipq"/>
+                                            <constraint firstAttribute="trailing" secondItem="SdZ-La-Yid" secondAttribute="trailing" id="g6G-aK-idX"/>
+                                            <constraint firstItem="SdZ-La-Yid" firstAttribute="top" secondItem="AA3-Md-KPE" secondAttribute="top" constant="10" id="muZ-d8-3dO"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YGQ-xP-xXH" firstAttribute="leading" secondItem="pI6-kf-uvU" secondAttribute="leading" constant="30" id="797-DE-jCX"/>
+                                    <constraint firstItem="YGQ-xP-xXH" firstAttribute="top" secondItem="pI6-kf-uvU" secondAttribute="top" constant="80" id="CAG-B2-UJl"/>
+                                    <constraint firstItem="AA3-Md-KPE" firstAttribute="leading" secondItem="pI6-kf-uvU" secondAttribute="leading" constant="30" id="IPb-NE-ybi"/>
+                                    <constraint firstItem="AA3-Md-KPE" firstAttribute="top" secondItem="YGQ-xP-xXH" secondAttribute="bottom" constant="10" id="ISY-fe-qXJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="AA3-Md-KPE" secondAttribute="bottom" id="S3n-L8-wsU"/>
+                                    <constraint firstAttribute="height" constant="450" id="ZcN-uE-Dfn"/>
+                                    <constraint firstAttribute="trailing" secondItem="AA3-Md-KPE" secondAttribute="trailing" id="auX-AC-BUv"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="8dE-8Y-E2f">
+                                <rect key="frame" x="30" y="339.5" width="354" height="132.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJg-L5-b4B">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="29.5"/>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8G-t6-c8C">
+                                        <rect key="frame" x="0.0" y="79.5" width="354" height="53"/>
+                                        <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="RBd-D7-hvr" firstAttribute="trailing" secondItem="pI6-kf-uvU" secondAttribute="trailing" id="2Zg-AH-aEI"/>
+                            <constraint firstItem="RBd-D7-hvr" firstAttribute="trailing" secondItem="8dE-8Y-E2f" secondAttribute="trailing" constant="30" id="8d8-4Q-UK0"/>
+                            <constraint firstItem="pI6-kf-uvU" firstAttribute="top" secondItem="8dE-8Y-E2f" secondAttribute="bottom" constant="-60" id="BMi-nC-Qob"/>
+                            <constraint firstItem="pI6-kf-uvU" firstAttribute="leading" secondItem="RBd-D7-hvr" secondAttribute="leading" id="Gic-7v-9wV"/>
+                            <constraint firstItem="8dE-8Y-E2f" firstAttribute="leading" secondItem="RBd-D7-hvr" secondAttribute="leading" constant="30" id="W5L-0q-Axj"/>
+                            <constraint firstItem="RBd-D7-hvr" firstAttribute="bottom" secondItem="pI6-kf-uvU" secondAttribute="bottom" id="dDw-yw-Ohd"/>
+                            <constraint firstItem="3Mz-7q-AKN" firstAttribute="centerY" secondItem="0Ub-Bn-iRZ" secondAttribute="centerY" id="mUU-m0-tBM"/>
+                            <constraint firstItem="3Mz-7q-AKN" firstAttribute="leading" secondItem="RBd-D7-hvr" secondAttribute="leading" id="q8r-7T-ggL"/>
+                            <constraint firstItem="RBd-D7-hvr" firstAttribute="trailing" secondItem="3Mz-7q-AKN" secondAttribute="trailing" id="toH-cC-VqL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RBd-D7-hvr"/>
+                    </view>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="SdZ-La-Yid" id="dW7-VI-3JP"/>
+                        <outlet property="forgradiant" destination="pI6-kf-uvU" id="f1S-Xg-uul"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="56.521739130434788" y="96.428571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Android-Phone-Wallpapers-Most-Android-Phone-Wallpaper-Download" width="900" height="1600"/>
+    </resources>
+</document>
