@@ -34,5 +34,8 @@ class UIViewStyle: UIView {
         else{
             backgroundColor = UIColor.systemBackground
         }
+        let view = Bundle.main.loadNibNamed("common", owner: self, options: nil)?.first as! UIView
+              view.frame = self.bounds
+              self.addSubview(view)
     }
 }

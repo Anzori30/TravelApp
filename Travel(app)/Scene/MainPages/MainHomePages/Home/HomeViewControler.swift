@@ -9,7 +9,8 @@
 import UIKit
 
 class HomeViewControler: UIViewController {
-     
+   
+    @IBOutlet weak var username: UILabel!
     @IBOutlet private weak var userImage: UIButton!
     @IBOutlet private weak var collection: UICollectionView!
     @IBOutlet private weak var stackView: UIStackView!

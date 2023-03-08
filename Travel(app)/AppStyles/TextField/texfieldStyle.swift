@@ -9,11 +9,8 @@
 import UIKit
 
 class texfieldStyle: UITextField {
-    private let field: UIButton = {
-        let button = UIButton()
-        return button
-    }()
     override init(frame: CGRect) {
+        
         super.init(frame: frame)
         Field()
     }
@@ -24,6 +21,8 @@ class texfieldStyle: UITextField {
     }
     func Field() {
         borderStyle = .none
+
     }
+ 
 }
 

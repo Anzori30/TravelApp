@@ -28,10 +28,12 @@ func bacgroundColor(view:UIView){
    view.backgroundColor = color()
 }
 
+//mainviewsize
+private var viewsize = Int()
 // gradiand for View
-func ViewtopGradiant(imageTopView:UIView!){
+func ViewtopGradiant(imageTopView:UIView!, mainView:UIView!){
     let gradientLayer = CAGradientLayer()
-    imageTopView.layer.cornerRadius = 40
+    imageTopView.layer.cornerRadius = 20
     imageTopView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     gradientLayer.frame = imageTopView.bounds
     gradientLayer.colors = [UIColor.clear.cgColor, color().cgColor]
@@ -39,6 +41,8 @@ func ViewtopGradiant(imageTopView:UIView!){
     gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
     gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)
     imageTopView.layer.insertSublayer(gradientLayer, at: 0)
+    gradientLayer.frame.size.width = mainView.frame.size.width
+    viewsize = Int(mainView.frame.size.width - 40)
 }
 // border Bottom
 func addBottomBorder(to stackView: UIStackView, color: UIColor = .lightGray, width: CGFloat = 1.0) {
@@ -46,13 +50,14 @@ func addBottomBorder(to stackView: UIStackView, color: UIColor = .lightGray, wid
     border.backgroundColor = color.cgColor
     border.frame = CGRect(x: 0, y: stackView.frame.size.height - width, width: stackView.frame.size.width, height: width)
     stackView.layer.addSublayer(border)
+    border.frame.size.width = CGFloat(viewsize)
 }
 //textfield BorderBottom
-func textField(to stackView: UITextField, color: UIColor = .lightGray, width: CGFloat = 1.0) {
+func textField(to textField: UITextField, color: UIColor = .lightGray, width: CGFloat = 1.0) {
     let border = CALayer()
     border.backgroundColor = color.cgColor
-    border.frame = CGRect(x: 0, y: stackView.frame.size.height - width, width: stackView.frame.size.width, height: width)
-    stackView.layer.addSublayer(border)
+    border.frame = CGRect(x: 0, y: textField.frame.size.height - width, width: textField.frame.size.width, height: width)
+    textField.layer.addSublayer(border)
 }
 
 

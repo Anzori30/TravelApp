@@ -23,5 +23,6 @@ class buttonStyle: UIButton {
     }
     func button() {
         layer.cornerRadius = 20
+        backgroundColor = .red
     }
 }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 class ForgotPasswordViewControler: UIViewController {
     //image
     @IBOutlet private weak var onImageView: UIView!
@@ -20,14 +20,23 @@ class ForgotPasswordViewControler: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //gradiant
-        ViewtopGradiant(imageTopView: onImageView)
+        ViewtopGradiant(imageTopView: onImageView, mainView: view)
         // borders
         addBottomBorder(to: stackView)
     }
 
-    @IBAction func SendCode(_ sender: Any) {
-        let vc = UIStoryboard(name: "VerifyViewControler", bundle: nil).instantiateViewController(identifier: "VerifyViewControler") as! VerifyViewControler
-        navigationController?.pushViewController(vc, animated: true)
+    @IBAction func SendCode(_ sender: Any){
+        let auth = Auth.auth()
+        auth.sendPasswordReset(withEmail: emailField.text!) { error in
+            
+            if let error = error{
+                self.present(AlertController.creatalert(title: "", message: error.localizedDescription), animated: true)
+            }
+            self.present(AlertController.creatalert(title: "", message:"Recovery link sent successfully"), animated: true)
+            self.emailField.text = ""
+        }
+        
+    
     }
     
 }

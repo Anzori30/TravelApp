@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>240341360332-nqunvbo7ad5jh0q80lmq9n2sd6pctp42.apps.googleusercontent.com</string>
+	<string>393122920917-tuao651i6j24muru69fiohsmc0c7fk86.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.240341360332-nqunvbo7ad5jh0q80lmq9n2sd6pctp42</string>
+	<string>com.googleusercontent.apps.393122920917-tuao651i6j24muru69fiohsmc0c7fk86</string>
 	<key>API_KEY</key>
-	<string>AIzaSyC-lNyf7RZdMYjcZKtHACSPRCSOjIq3EDc</string>
+	<string>AIzaSyDM1JE5p6HfGMgsVgWoy4nEe4Ym_Y60MH8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>240341360332</string>
+	<string>393122920917</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>mac.Travel-app-</string>
+	<string>Travel</string>
 	<key>PROJECT_ID</key>
-	<string>travel-c67e2</string>
+	<string>travel-e55b3</string>
 	<key>STORAGE_BUCKET</key>
-	<string>travel-c67e2.appspot.com</string>
+	<string>travel-e55b3.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:240341360332:ios:c68b6068dd37417a7fac69</string>
+	<string>1:393122920917:ios:5cf58742fbf88f999de55c</string>
 </dict>
 </plist>

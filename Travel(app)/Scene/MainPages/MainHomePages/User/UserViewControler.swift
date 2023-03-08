@@ -9,6 +9,7 @@
 import UIKit
 
 class UserViewControler: UIViewController {
+    @IBOutlet weak var loaderSpiner: UIActivityIndicatorView!
     let listName = [
     Setting(listName: "Your Profile"),
      Setting(listName: "Booking List"),
@@ -53,6 +54,16 @@ extension UserViewControler: UITableViewDelegate{
         if value.listName == "Setting"{
         let vc = UIStoryboard(name: "SettingPage", bundle: nil).instantiateViewController(identifier: "SettingPage") as! SettingPage
             navigationController?.pushViewController(vc, animated: true)
+        }
+        if value.listName == "Logout"{
+            
+            UserDefaults.standard.set(false, forKey: "isLogined")
+            loaderSpiner.startAnimating()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                self.loaderSpiner.stopAnimating()
+                (self.tabBarController as? TabBarViewControler)?.logout()
+                }
+            
         }
     }
 }

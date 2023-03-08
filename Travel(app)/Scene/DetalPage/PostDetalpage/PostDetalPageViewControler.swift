@@ -19,7 +19,7 @@ class PostDetalPageViewControler: UIViewController{
         collectionView.delegate = self
         
         //gradiant
-        ViewtopGradiant(imageTopView: forgradiant)
+        ViewtopGradiant(imageTopView: forgradiant, mainView: view)
     }
     
      func calculateItemSize(for collectionView: UICollectionView) -> CGSize {

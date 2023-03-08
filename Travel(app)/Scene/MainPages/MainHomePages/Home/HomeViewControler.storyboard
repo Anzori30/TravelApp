@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -94,6 +95,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Tn-cG-Tug"/>
                         <color key="backgroundColor" red="0.1058823529" green="0.1957857013" blue="0.19250011440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="0Tn-cG-Tug" firstAttribute="trailing" secondItem="bGl-oj-qtF" secondAttribute="trailing" id="FdQ-OR-q1U"/>
@@ -108,7 +110,6 @@
                             <constraint firstItem="0Tn-cG-Tug" firstAttribute="bottom" secondItem="Lvp-pc-bTc" secondAttribute="bottom" constant="30" id="ve9-pn-QAw"/>
                             <constraint firstItem="3GK-Sf-SXO" firstAttribute="leading" secondItem="0Tn-cG-Tug" secondAttribute="leading" constant="30" id="zw5-bI-RfG"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="0Tn-cG-Tug"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="house" catalog="system" id="Zs8-4A-kHz"/>
                     <navigationItem key="navigationItem" id="W5G-qJ-L9g"/>
@@ -117,6 +118,7 @@
                         <outlet property="collection" destination="Lvp-pc-bTc" id="w7B-jO-9DM"/>
                         <outlet property="stackView" destination="bGl-oj-qtF" id="OCT-hD-u8F"/>
                         <outlet property="userImage" destination="aYp-Bw-Mps" id="ztl-2U-uKb"/>
+                        <outlet property="username" destination="ygy-pL-zza" id="hoK-qu-qqb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXj-Cr-AlE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -148,8 +150,8 @@
     </scenes>
     <resources>
         <image name="Image" width="1000" height="1000"/>
-        <image name="house" catalog="system" width="64" height="54"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
-        <image name="square.grid.2x2.fill" catalog="system" width="64" height="56"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>

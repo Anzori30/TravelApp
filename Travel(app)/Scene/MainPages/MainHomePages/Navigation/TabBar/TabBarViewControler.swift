@@ -7,16 +7,29 @@
 //
 
 import UIKit
-
+import Firebase
 class TabBarViewControler: UITabBarController{
     
     @IBOutlet weak var tabbar: UITabBar!
     override func viewDidLoad() {
         super.viewDidLoad()
+  
         start()
     }
    func start(){
-            tabBarColor(tab: tabbar)
+        tabBarColor(tab: tabbar)
+    }
+    func logout(){
+       
+        do {
+          try Auth.auth().signOut()
+            if let navigationController = navigationController {
+                navigationController.popViewController(animated: true)
+                navigationController.isNavigationBarHidden = false
+            }
+        } catch let error as NSError {
+          print("Error signing out: %@", error)
+        }
     }
    
 }
