@@ -29,6 +29,11 @@ class LogInViewControler: UIViewController {
     
     @IBOutlet weak var activity: UIActivityIndicatorView!
     
+  
+    @IBOutlet weak var lable: UILabel!
+    
+    var valueToSave = Bool()
+    let defaults = UserDefaults.standard
     override func viewDidLoad() {
         super.viewDidLoad()
         // gradiants for view
@@ -40,9 +45,10 @@ class LogInViewControler: UIViewController {
         addBottomBorder(to: stack_Border)
         addBottomBorder(to: starck2_Border)
        
+
     }
     override func viewWillAppear(_ animated: Bool) {
-        
+        navigationController?.isNavigationBarHidden = false
     }
    
     @IBAction func ForgotPasword(_ sender: Any) {
@@ -71,9 +77,6 @@ class LogInViewControler: UIViewController {
             sender.isSelected = true
         }
     }
-    
-
-    
 }
 extension LogInViewControler{
     func signInWithEmail(email: String, password: String) {
@@ -96,23 +99,24 @@ extension LogInViewControler{
                 }
 
             //user name
-//            if let user = authResult?.user {
-//               let displayName = user.displayName ?? "Unknown"
-//                self.present(AlertController.creatalert(title: "Hi \(displayName)", message: ""), animated: true)
-//
-//             }
+            if let user = authResult?.user {
+               let displayName = user.displayName ?? "Unknown"
+                UserDefaults.standard.set(displayName, forKey: "myKey")
+             }
 //                let vc = UIStoryboard(name: "VerifyViewControler", bundle: nil).instantiateViewController(identifier: "VerifyViewControler") as! VerifyViewControler
 //                self.navigationController?.pushViewController(vc, animated: true)
             if self.saveInfo_button.isSelected{
-                UserDefaults.standard.set(true, forKey: "isLogined")
+                self.valueToSave = true
+                self.defaults.set(self.valueToSave, forKey: "isLogined")
             }
             else{
-                UserDefaults.standard.set(false, forKey: "isLogined")
+                self.valueToSave = false
+                self.defaults.set(self.valueToSave, forKey: "isLogined")
             }
+            self.defaults.synchronize()
             self.activity.stopAnimating()
             let vc = UIStoryboard(name: "TabBarViewControler", bundle: nil).instantiateViewController(identifier: "TabBarViewControler") as! TabBarViewControler
             self.navigationController?.pushViewController(vc, animated: true)
-            vc.navigationController?.isNavigationBarHidden = true
             self.password_textField.text = ""
             }
 

@@ -12,27 +12,25 @@ import LocalAuthentication
 class RegistrationViewControler: UIViewController {
     var ViewSize = Int()
     // images
-    @IBOutlet weak var onImageView: UIView!
+    @IBOutlet private weak var onImageView: UIView!
     //Buttons
     @IBOutlet private weak var registerButton: UIButton!
-    
     //textFields
-    @IBOutlet weak var lastnameTextField: UITextField!
-    @IBOutlet weak var repeatPassword: UITextField!
-    @IBOutlet private weak var emailTextField: UITextField!
-    @IBOutlet private weak var passwordTextField: UITextField!
-  
+    @IBOutlet private weak var lastnameTextField: UITextField!
+    @IBOutlet private weak var repeatPassword: UITextField!
+    @IBOutlet private  weak var emailTextField: UITextField!
+    @IBOutlet private  weak var passwordTextField: UITextField!
     // stackViews
-    @IBOutlet weak var stack_view2: UIStackView!
-    @IBOutlet weak var stack_view3: UIStackView!
-    @IBOutlet weak var stack_view4: UIStackView!
-    @IBOutlet weak var stack_view5: UIStackView!
-    @IBOutlet weak var mainSteck: UIStackView!
+    @IBOutlet private weak var stack_view2: UIStackView!
+    @IBOutlet private weak var stack_view3: UIStackView!
+    @IBOutlet private weak var stack_view4: UIStackView!
+    @IBOutlet private weak var stack_view5: UIStackView!
+    @IBOutlet private weak var mainSteck: UIStackView!
     
 
     // Add this to viewDidLoad()
     let scrollView = UIScrollView()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
          //gradiants
@@ -42,18 +40,12 @@ class RegistrationViewControler: UIViewController {
           addBottomBorder(to: stack_view3)
           addBottomBorder(to: stack_view4)
           addBottomBorder(to: stack_view5)
-        
-        
         registerForKeyboardNotifications()
     }
-    
     func registerForKeyboardNotifications() {
            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
            NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
        }
-    
-    
-    
     @objc func keyboardWillShow(notification: NSNotification) {
             if let userInfo = notification.userInfo,
                 let keyboardSize = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
@@ -68,11 +60,6 @@ class RegistrationViewControler: UIViewController {
             self.scrollView.contentInset = contentInsets
             self.scrollView.scrollIndicatorInsets = contentInsets
         }
-
-    
-    
-    
-    
     
     @IBAction func on_SignUp(_ sender: Any) {
         if lastnameTextField.text != "" {
@@ -124,8 +111,6 @@ extension RegistrationViewControler{
                 self.present(alert, animated: true)
             }
           
- 
-            
             let changeRequest = authResult?.user.createProfileChangeRequest()
             changeRequest?.displayName = self.lastnameTextField.text!
             changeRequest?.commitChanges { error in
@@ -138,9 +123,6 @@ extension RegistrationViewControler{
             
             }
         }
-        
-        
-        
     }
 
     

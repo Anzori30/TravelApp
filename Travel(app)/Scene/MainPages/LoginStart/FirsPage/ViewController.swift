@@ -18,7 +18,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
     @IBAction func nextButton(_ sender: Any) {
           let vc = UIStoryboard(name: "LogInViewControler", bundle: nil).instantiateViewController(identifier: "LogInViewControler") as! LogInViewControler
                   navigationController?.pushViewController(vc, animated: true)

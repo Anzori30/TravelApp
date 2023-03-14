@@ -23,7 +23,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCi-Gm-7bm" customClass="viewGradiant" customModule="Travel_app_" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="429" width="430" height="503"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Your Identify" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pju-bQ-VfQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Your Identify" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pju-bQ-VfQ" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
                                         <rect key="frame" x="20" y="10" width="207" height="133"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="133" id="6AL-ff-a5P"/>

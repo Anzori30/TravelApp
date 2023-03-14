@@ -9,20 +9,27 @@
 import UIKit
 
 class texfieldStyle: UITextField {
+    let placeholderColor = UIColor.lightGray
+    let placeholderFont = UIFont.systemFont(ofSize: 16.0)
+
     override init(frame: CGRect) {
-        
         super.init(frame: frame)
-        Field()
+        setupField()
     }
     
     required init?(coder: NSCoder) {
-        super.init(coder:coder)
-       Field()
+        super.init(coder: coder)
+        setupField()
     }
-    func Field() {
+    
+    func setupField() {
         borderStyle = .none
-
+        
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: placeholderColor,
+            .font: placeholderFont
+        ]
+        attributedPlaceholder = NSAttributedString(string: placeholder!, attributes: attributes)
     }
- 
 }
 

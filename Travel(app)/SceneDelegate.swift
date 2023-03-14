@@ -20,15 +20,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let scene = (scene as? UIWindowScene) else { return }
         let window = UIWindow(windowScene: scene)
         let isUserLogginedIn = UserDefaults.standard.bool(forKey: "isLogined")
-    
-            if isUserLogginedIn{
-                     let storyboard = UIStoryboard(name: "TabBarViewControler", bundle: nil).instantiateViewController(identifier: "TabBarViewControler")
-                     window.rootViewController =  storyboard
-                 }
-                 else{
-                     let storyboard = UIStoryboard(name: "ViewController", bundle: nil).instantiateViewController(identifier: "ViewController")
-                      window.rootViewController =  UINavigationController(rootViewController: storyboard)
-                }
+
+        if isUserLogginedIn{
+            let storyboard = UIStoryboard(name: "TabBarViewControler", bundle: nil)
+            let tabBarVC = storyboard.instantiateViewController(identifier: "TabBarViewControler")
+            window.rootViewController = UINavigationController(rootViewController: tabBarVC)
+        }
+         else{
+             let storyboard = UIStoryboard(name: "ViewController", bundle: nil).instantiateViewController(identifier: "ViewController")
+             window.rootViewController =  UINavigationController(rootViewController: storyboard)
+         }
          window.makeKeyAndVisible()
         self.window = window
     }

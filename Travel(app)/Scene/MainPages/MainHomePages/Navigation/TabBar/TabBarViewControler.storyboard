@@ -4,34 +4,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar View Controler-->
-        <scene sceneID="lmH-NK-HZH">
-            <objects>
-                <tabBarController storyboardIdentifier="TabBarViewControler" id="p7h-a8-5hY" customClass="TabBarViewControler" customModule="Travel_app_" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="zsG-hE-2L1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="1" green="0.61076081940000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
-                    </tabBar>
-                    <connections>
-                        <outlet property="tabbar" destination="zsG-hE-2L1" id="TCx-ic-6LJ"/>
-                        <segue destination="UnQ-Ie-w3t" kind="relationship" relationship="viewControllers" id="cSG-W3-dKg"/>
-                        <segue destination="gw8-QJ-cjf" kind="relationship" relationship="viewControllers" id="VWP-ek-gpA"/>
-                        <segue destination="ZGb-85-qBY" kind="relationship" relationship="viewControllers" id="Y31-1r-Uvu"/>
-                        <segue destination="TiU-z3-eTR" kind="relationship" relationship="viewControllers" id="gf6-hZ-zXg"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hba-fl-MkR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-878" y="-67"/>
-        </scene>
         <!--HomeViewControlerNav-->
         <scene sceneID="vdN-Nq-szz">
             <objects>
@@ -72,10 +47,28 @@
             </objects>
             <point key="canvasLocation" x="-215" y="-68"/>
         </scene>
+        <!--Tab Bar View Controler-->
+        <scene sceneID="rNL-lo-WVS">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarViewControler" id="Bwy-0c-v7A" customClass="TabBarViewControler" customModule="Travel_app_" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0Bk-tp-PuB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.83921568627450982" green="0.63529411764705879" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <outlet property="tabbar" destination="0Bk-tp-PuB" id="4Im-bi-JZt"/>
+                        <segue destination="UnQ-Ie-w3t" kind="relationship" relationship="viewControllers" id="6MT-zg-97g"/>
+                        <segue destination="gw8-QJ-cjf" kind="relationship" relationship="viewControllers" id="P0P-s2-LM8"/>
+                        <segue destination="ZGb-85-qBY" kind="relationship" relationship="viewControllers" id="v8r-It-ikc"/>
+                        <segue destination="TiU-z3-eTR" kind="relationship" relationship="viewControllers" id="hoi-mC-t3g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lem-lt-Ica" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1016" y="-221"/>
+        </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>

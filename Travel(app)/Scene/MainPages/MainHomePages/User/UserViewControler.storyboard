@@ -12,7 +12,7 @@
         <scene sceneID="v4a-af-TLM">
             <objects>
                 <viewController storyboardIdentifier="UserViewControler" id="yNa-Xq-w5w" customClass="UserViewControler" customModule="Travel_app_" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xLr-cG-BG5" customClass="CustomView" customModule="Travel_app_" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="xLr-cG-BG5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -80,6 +80,7 @@
                         <outlet property="loaderSpiner" destination="Bgq-gE-LEc" id="L43-GM-cUI"/>
                         <outlet property="tableView" destination="mc8-K3-TvX" id="xO1-XU-peI"/>
                         <outlet property="userImage" destination="cDj-X3-N1e" id="OAO-rq-oh8"/>
+                        <outlet property="user_nameLable" destination="nZW-u1-Dko" id="tEZ-iH-FK3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wvp-yO-q1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

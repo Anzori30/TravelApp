@@ -7,25 +7,32 @@
 //
 import UIKit
 
-func color() -> UIColor {
+
+private func backgraundColors() -> UIColor {
+    
     let defaults = UserDefaults.standard
     let savedColor = defaults.string(forKey: "backgroundColor") ?? "white"
     
     if savedColor == "0" {
-        return UIColor(red: 0.106, green: 0.196, blue: 0.196, alpha: 1)
+        return UIColor(named: "BackGroundColor_Green")!
     }
     else if savedColor == "1" {
-        return UIColor(red: 0.992, green: 0.91, blue: 0.816, alpha: 0.9)
+        return UIColor(named: "BackGroundColor_Orange")!
     }
     else {
-        return UIColor.systemBackground
+        if HomeViewControler().traitCollection.userInterfaceStyle == .dark || LogInViewControler().traitCollection.userInterfaceStyle == .dark {
+               return UIColor(named: "BackGroundColor_Green")!
+           } else {
+               return UIColor(named: "BackGroundColor_Orange")!
+        }
     }
+    
 }
 func tabBarColor(tab:UITabBar){
-    tab.barTintColor = color()
+    tab.backgroundColor = backgraundColors()
 }
 func bacgroundColor(view:UIView){
-   view.backgroundColor = color()
+   view.backgroundColor = backgraundColors()
 }
 
 //mainviewsize
@@ -36,7 +43,7 @@ func ViewtopGradiant(imageTopView:UIView!, mainView:UIView!){
     imageTopView.layer.cornerRadius = 20
     imageTopView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     gradientLayer.frame = imageTopView.bounds
-    gradientLayer.colors = [UIColor.clear.cgColor, color().cgColor]
+    gradientLayer.colors = [UIColor.clear.cgColor, backgraundColors().cgColor]
     gradientLayer.locations = [0.0, 0.177]
     gradientLayer.startPoint = CGPoint(x: 0.5, y: 0.0)
     gradientLayer.endPoint = CGPoint(x: 0.5, y: 1.0)

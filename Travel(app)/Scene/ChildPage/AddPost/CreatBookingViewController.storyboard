@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Creat Booking View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CreatBookingViewController" id="Y6W-OH-hqX" customClass="CreatBookingViewController" customModule="Travel_app_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1510"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQv-Yu-OCu">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1417"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsm-s7-NS2">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1232.3333333333333"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creat Booking" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jy6-py-5iq" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="20" width="152" height="119"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="152" id="8iW-bv-KaY"/>
+                                                    <constraint firstAttribute="height" constant="119" id="xxk-dd-6YE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Impact" family="Impact" pointSize="38"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Gne-u3-9Th">
+                                                <rect key="frame" x="20" y="169" width="353" height="64.333333333333314"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geN-TG-fnG" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="42.666666666666664" height="19.333333333333332"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="19.329999999999998" id="AhU-8h-qTg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ONw-5R-uGV" customClass="textFieldautoChangeColor" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="24.333333333333343" width="353" height="40"/>
+                                                        <color key="tintColor" red="1" green="0.5372183989" blue="0.053172765599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="dJX-tF-o6P"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="1" green="0.5372183989" blue="0.053172765599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ONw-5R-uGV" secondAttribute="trailing" id="Ykh-3m-hY7"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FYL-do-K5A">
+                                                <rect key="frame" x="20" y="253.33333333333334" width="353" height="64.333333333333343"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBW-gB-LLf" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="83.333333333333329" height="19.333333333333332"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="19.329999999999998" id="eTr-3F-yVf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m3p-rS-pkM" customClass="textFieldautoChangeColor" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="24.333333333333371" width="353" height="40"/>
+                                                        <color key="tintColor" red="1" green="0.5372183989" blue="0.053172765599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="textColor" red="1" green="0.5372183989" blue="0.053172765599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="m3p-rS-pkM" secondAttribute="trailing" id="bj2-w2-kxW"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kZD-Jw-IV4">
+                                                <rect key="frame" x="20" y="337.66666666666669" width="353" height="64.333333333333314"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABI-nG-T0G" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="37" height="19.333333333333332"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="19.329999999999998" id="aLF-dC-7Tr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VXV-Aa-XbM" customClass="textFieldautoChangeColor" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="24.333333333333314" width="353" height="40"/>
+                                                        <color key="tintColor" red="1" green="0.5372183989" blue="0.053172765599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="6fO-Fx-Aqh"/>
+                                                        </constraints>
+                                                        <color key="textColor" red="1" green="0.5372183989" blue="0.053172765599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="VXV-Aa-XbM" secondAttribute="trailing" id="HQx-Ga-4fc"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="8eO-St-DIN">
+                                                <rect key="frame" x="20" y="422" width="353" height="97"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C6I-94-irz" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50.333333333333336" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="2M1-VE-hcs"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Person" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wSo-ID-gKb" customClass="LableAutoChangeColor" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="27" width="60" height="25"/>
+                                                        <color key="backgroundColor" name="ButtonColor_Green"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="8vv-oY-erO"/>
+                                                            <constraint firstAttribute="width" constant="60" id="xkZ-nz-7kR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" red="1" green="0.63921568630000003" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="1" maxValue="30" translatesAutoresizingMaskIntoConstraints="NO" id="sec-O0-Rn1">
+                                                        <rect key="frame" x="-2" y="54" width="357" height="31"/>
+                                                        <color key="minimumTrackTintColor" red="1" green="0.63921568630000003" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="thumbTintColor" red="1" green="0.63921568630000003" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </slider>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Fo8-W1-99d">
+                                                        <rect key="frame" x="0.0" y="86" width="353" height="11"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 person" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2c-6p-J43" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="11"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 person" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyQ-8Q-p2Y" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                                <rect key="frame" x="178.66666666666663" y="0.0" width="174.33333333333337" height="11"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="97" id="J2s-Bb-4gZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Fo8-W1-99d" secondAttribute="trailing" id="l2e-VW-ZIM"/>
+                                                    <constraint firstAttribute="trailing" secondItem="sec-O0-Rn1" secondAttribute="trailing" id="zIe-Px-fdD"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="PuN-qz-OAe">
+                                                <rect key="frame" x="20" y="674" width="353" height="92.666666666666629"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oy-BC-Gmj" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="35.666666666666664" height="19.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="j3J-Qy-SUd">
+                                                        <rect key="frame" x="0.0" y="24.333333333333371" width="282" height="31.666666666666671"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPB-HR-BjV" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="31.666666666666668"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Normal">
+                                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="on_Type:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="2Ma-8N-oXb"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6l-rG-BVd" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                                <rect key="frame" x="97.333333333333343" y="0.0" width="87.333333333333343" height="31.666666666666668"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Business">
+                                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="on_Type:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EoM-HJ-PiG"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0L0-Tt-XXG" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                                <rect key="frame" x="194.66666666666666" y="0.0" width="87.333333333333343" height="31.666666666666668"/>
+                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Economy">
+                                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="on_Type:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="SKF-4h-bnx"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nii-6v-FKs" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="60.999999999999993" width="47" height="31.666666666666664"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="VIP">
+                                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="on_Type:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Rgm-lO-y6h"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="f0P-UP-lRy">
+                                                <rect key="frame" x="20" y="539" width="353" height="115"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Star" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvC-qS-uxV" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="25"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="yJy-qI-F96"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Star" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTJ-PT-gQA" customClass="LableAutoChangeColor" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="33" width="60" height="25"/>
+                                                        <color key="backgroundColor" name="ButtonColor_Green"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="25" id="DIK-oa-IR3"/>
+                                                            <constraint firstAttribute="width" constant="60" id="qX1-7k-81u"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="highlightedColor" red="1" green="0.63921568630000003" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </label>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="s0N-4V-MEf">
+                                                        <rect key="frame" x="-2" y="66" width="357" height="31"/>
+                                                        <color key="minimumTrackTintColor" red="1" green="0.63921568630000003" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="thumbTintColor" red="1" green="0.63921568630000003" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </slider>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="g9W-QI-zJi">
+                                                        <rect key="frame" x="0.0" y="104" width="353" height="11"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 Star" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1lb-ck-1Wc" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="11"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Star" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahk-1O-tjX" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                                <rect key="frame" x="178.66666666666663" y="0.0" width="174.33333333333337" height="11"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="s0N-4V-MEf" secondAttribute="trailing" id="Llb-HY-Ds2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="g9W-QI-zJi" secondAttribute="trailing" id="ZAq-iX-cWh"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="biB-i4-U7k">
+                                                <rect key="frame" x="20" y="786.66666666666663" width="353" height="34.333333333333371"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnt-le-8Q6" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="89.333333333333329" height="34.333333333333336"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="89.329999999999998" id="B7o-gs-5pZ"/>
+                                                        </constraints>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Location"/>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HIV-sZ-FrN">
+                                                        <rect key="frame" x="109.33333333333336" y="0.0" width="243.66666666666663" height="34.333333333333336"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHx-PA-hQw" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="841" width="104" height="34.333333333333371"/>
+                                                <color key="tintColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Add Photo"/>
+                                                <connections>
+                                                    <action selector="addImage:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cV4-UD-xRz"/>
+                                                </connections>
+                                            </button>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q0Z-0F-ZjE">
+                                                <rect key="frame" x="20" y="895.33333333333337" width="353" height="150.00000000000011"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="RC3-y7-k7m"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bZ8-mI-etA">
+                                                    <size key="itemSize" width="128" height="128"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells/>
+                                            </collectionView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="4Dn-sk-cEd">
+                                                <rect key="frame" x="20" y="1085.3333333333333" width="353" height="107"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="mqA-UN-Xds">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="30"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWf-7S-bBJ" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="157" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXg-8O-O2L">
+                                                                <rect key="frame" x="196" y="0.0" width="157" height="30"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqr-SY-Wcd" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="37" width="353" height="70"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="xt3-eE-kPP"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Post">
+                                                            <color key="baseForegroundColor" red="1" green="0.5372183989" blue="0.053172765599999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="On_Post:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FE9-ve-dVM"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="hqr-SY-Wcd" secondAttribute="trailing" id="Wl9-lY-ZdL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mqA-UN-Xds" secondAttribute="trailing" id="fnw-gN-O2J"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="q0Z-0F-ZjE" firstAttribute="leading" secondItem="PuN-qz-OAe" secondAttribute="leading" id="1Tb-kV-Wsb"/>
+                                            <constraint firstItem="8eO-St-DIN" firstAttribute="leading" secondItem="FYL-do-K5A" secondAttribute="leading" id="4M6-B0-Dfm"/>
+                                            <constraint firstItem="q0Z-0F-ZjE" firstAttribute="top" secondItem="kHx-PA-hQw" secondAttribute="bottom" constant="20" id="4W6-ii-WIJ"/>
+                                            <constraint firstItem="jy6-py-5iq" firstAttribute="top" secondItem="Nsm-s7-NS2" secondAttribute="top" constant="20" id="CwV-ZM-qV4"/>
+                                            <constraint firstItem="8eO-St-DIN" firstAttribute="trailing" secondItem="FYL-do-K5A" secondAttribute="trailing" id="Dih-nj-jOk"/>
+                                            <constraint firstItem="kHx-PA-hQw" firstAttribute="top" secondItem="biB-i4-U7k" secondAttribute="bottom" constant="20" id="Fx3-C4-Wd0"/>
+                                            <constraint firstItem="kZD-Jw-IV4" firstAttribute="leading" secondItem="PuN-qz-OAe" secondAttribute="leading" id="Fzk-OH-1xx"/>
+                                            <constraint firstItem="4Dn-sk-cEd" firstAttribute="leading" secondItem="PuN-qz-OAe" secondAttribute="leading" id="GZ1-Sr-Orp"/>
+                                            <constraint firstItem="jy6-py-5iq" firstAttribute="leading" secondItem="Nsm-s7-NS2" secondAttribute="leading" constant="20" id="IHp-d7-fIL"/>
+                                            <constraint firstItem="4Dn-sk-cEd" firstAttribute="top" secondItem="q0Z-0F-ZjE" secondAttribute="bottom" constant="40" id="Lvr-sC-2Lg"/>
+                                            <constraint firstItem="f0P-UP-lRy" firstAttribute="leading" secondItem="8eO-St-DIN" secondAttribute="leading" id="MJD-fd-o4T"/>
+                                            <constraint firstItem="PuN-qz-OAe" firstAttribute="leading" secondItem="8eO-St-DIN" secondAttribute="leading" id="Q2z-4j-lFI"/>
+                                            <constraint firstItem="kHx-PA-hQw" firstAttribute="leading" secondItem="Hnt-le-8Q6" secondAttribute="leading" id="SiE-I6-rX8"/>
+                                            <constraint firstItem="PuN-qz-OAe" firstAttribute="trailing" secondItem="8eO-St-DIN" secondAttribute="trailing" id="YQJ-xa-byI"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Dn-sk-cEd" secondAttribute="bottom" constant="40" id="aRT-07-bzb"/>
+                                            <constraint firstItem="FYL-do-K5A" firstAttribute="trailing" secondItem="Gne-u3-9Th" secondAttribute="trailing" id="aaR-L6-1fu"/>
+                                            <constraint firstItem="Gne-u3-9Th" firstAttribute="leading" secondItem="Nsm-s7-NS2" secondAttribute="leading" constant="20" id="d3C-Bh-n50"/>
+                                            <constraint firstItem="ONw-5R-uGV" firstAttribute="height" secondItem="m3p-rS-pkM" secondAttribute="height" id="fGt-En-EnV"/>
+                                            <constraint firstItem="f0P-UP-lRy" firstAttribute="trailing" secondItem="8eO-St-DIN" secondAttribute="trailing" id="hfN-EM-reQ"/>
+                                            <constraint firstItem="8eO-St-DIN" firstAttribute="top" secondItem="kZD-Jw-IV4" secondAttribute="bottom" constant="20" id="huW-SW-sMd"/>
+                                            <constraint firstItem="biB-i4-U7k" firstAttribute="trailing" secondItem="PuN-qz-OAe" secondAttribute="trailing" id="hus-0q-xcc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gne-u3-9Th" secondAttribute="trailing" constant="20" id="iFn-Ch-C8I"/>
+                                            <constraint firstItem="PuN-qz-OAe" firstAttribute="top" secondItem="f0P-UP-lRy" secondAttribute="bottom" constant="20" id="jV9-yF-4CA"/>
+                                            <constraint firstItem="kZD-Jw-IV4" firstAttribute="trailing" secondItem="PuN-qz-OAe" secondAttribute="trailing" id="jjB-ph-D6g"/>
+                                            <constraint firstItem="f0P-UP-lRy" firstAttribute="top" secondItem="8eO-St-DIN" secondAttribute="bottom" constant="20" id="kjc-S9-Ou5"/>
+                                            <constraint firstItem="kZD-Jw-IV4" firstAttribute="top" secondItem="FYL-do-K5A" secondAttribute="bottom" constant="20" id="lK2-Go-Ehw"/>
+                                            <constraint firstItem="Gne-u3-9Th" firstAttribute="top" secondItem="jy6-py-5iq" secondAttribute="bottom" constant="30" id="ljS-yX-9v6"/>
+                                            <constraint firstItem="FYL-do-K5A" firstAttribute="leading" secondItem="Gne-u3-9Th" secondAttribute="leading" id="mt7-pE-De2"/>
+                                            <constraint firstItem="4Dn-sk-cEd" firstAttribute="trailing" secondItem="PuN-qz-OAe" secondAttribute="trailing" id="nu1-AN-Swr"/>
+                                            <constraint firstItem="q0Z-0F-ZjE" firstAttribute="trailing" secondItem="PuN-qz-OAe" secondAttribute="trailing" id="q2S-2u-LY0"/>
+                                            <constraint firstItem="FYL-do-K5A" firstAttribute="top" secondItem="Gne-u3-9Th" secondAttribute="bottom" constant="20" id="qNu-nm-AwD"/>
+                                            <constraint firstItem="biB-i4-U7k" firstAttribute="leading" secondItem="PuN-qz-OAe" secondAttribute="leading" id="svl-gZ-0NN"/>
+                                            <constraint firstItem="biB-i4-U7k" firstAttribute="top" secondItem="PuN-qz-OAe" secondAttribute="bottom" constant="20" id="uun-DT-jnE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nsm-s7-NS2" firstAttribute="centerX" secondItem="qQv-Yu-OCu" secondAttribute="centerX" id="8m8-MZ-hQh"/>
+                                    <constraint firstItem="Nsm-s7-NS2" firstAttribute="leading" secondItem="qQv-Yu-OCu" secondAttribute="leading" id="ULQ-Fl-G8a"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nsm-s7-NS2" secondAttribute="trailing" id="ZHU-wV-Lqz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nsm-s7-NS2" secondAttribute="bottom" id="gkz-FX-ZIp"/>
+                                    <constraint firstItem="Nsm-s7-NS2" firstAttribute="top" secondItem="qQv-Yu-OCu" secondAttribute="top" id="q6c-1X-WtJ"/>
+                                </constraints>
+                            </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBf-TK-xbt">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="1510"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="BoI-d5-PMx">
+                                        <rect key="frame" x="178" y="736.66666666666663" width="37" height="37"/>
+                                        <color key="tintColor" red="0.36629476970000002" green="0.72628337139999999" blue="0.38060199259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="color" red="0.36629476970000002" green="0.72628337139999999" blue="0.38060199259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.43716370033112584" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="BoI-d5-PMx" firstAttribute="centerX" secondItem="nBf-TK-xbt" secondAttribute="centerX" id="EWA-S4-0wb"/>
+                                    <constraint firstItem="BoI-d5-PMx" firstAttribute="centerY" secondItem="nBf-TK-xbt" secondAttribute="centerY" id="WQl-ou-vX1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstItem="nBf-TK-xbt" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="35B-mw-tjN"/>
+                            <constraint firstItem="nBf-TK-xbt" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5e3-CR-Cmk"/>
+                            <constraint firstItem="qQv-Yu-OCu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="H2T-17-u25"/>
+                            <constraint firstItem="nBf-TK-xbt" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NsH-KY-Xyf"/>
+                            <constraint firstItem="qQv-Yu-OCu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="RDD-v9-u0m"/>
+                            <constraint firstItem="qQv-Yu-OCu" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="b4Z-Dw-XEW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qQv-Yu-OCu" secondAttribute="trailing" id="nOW-Yb-i0E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nBf-TK-xbt" secondAttribute="trailing" id="pdI-kN-EHL"/>
+                            <constraint firstItem="nBf-TK-xbt" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="wBd-N8-lmk"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="393" height="1510"/>
+                    <connections>
+                        <outlet property="Button1" destination="rPB-HR-BjV" id="Rj8-Hn-cmp"/>
+                        <outlet property="Button2" destination="O6l-rG-BVd" id="bDa-tQ-c1F"/>
+                        <outlet property="Button3" destination="0L0-Tt-XXG" id="TpN-l8-azM"/>
+                        <outlet property="Button4" destination="nii-6v-FKs" id="p0O-Hq-cVQ"/>
+                        <outlet property="collection" destination="q0Z-0F-ZjE" id="4yH-zo-QCE"/>
+                        <outlet property="description_field" destination="m3p-rS-pkM" id="KRA-e4-qCK"/>
+                        <outlet property="hide_all" destination="nBf-TK-xbt" id="Dqx-sK-0bO"/>
+                        <outlet property="main_view" destination="5EZ-qb-Rvc" id="15P-kb-eId"/>
+                        <outlet property="name_Field" destination="ONw-5R-uGV" id="6Iw-nW-UCT"/>
+                        <outlet property="priceTextField" destination="VXV-Aa-XbM" id="PLf-gB-o5V"/>
+                        <outlet property="price_labe" destination="AXg-8O-O2L" id="8Ah-ab-4pX"/>
+                        <outlet property="slider" destination="sec-O0-Rn1" id="Cuu-xL-PxX"/>
+                        <outlet property="slider_value" destination="wSo-ID-gKb" id="7gA-Ie-QM6"/>
+                        <outlet property="spiner" destination="BoI-d5-PMx" id="ZDW-Ad-cL3"/>
+                        <outlet property="star_slider" destination="s0N-4V-MEf" id="VNx-ZR-M17"/>
+                        <outlet property="star_slider_lable" destination="sTJ-PT-gQA" id="WOP-bd-iPt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="162.67605633802819"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="ButtonColor_Green">
+            <color red="0.14000000059604645" green="0.27000001072883606" blue="0.27000001072883606" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

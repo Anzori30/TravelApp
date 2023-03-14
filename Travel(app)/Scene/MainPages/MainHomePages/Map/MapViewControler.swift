@@ -23,6 +23,7 @@ class MapViewControler: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         locationManager.delegate = self
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -21,10 +21,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="430" height="898"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0N8-aY-rCf" customClass="viewGradiant" customModule="Travel_app_" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="232" width="430" height="666"/>
+                                <rect key="frame" x="0.0" y="194" width="430" height="704"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Oqm-F7-wkD">
-                                        <rect key="frame" x="20" y="193" width="390" height="210"/>
+                                        <rect key="frame" x="20" y="193" width="390" height="120"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BSX-9l-wnE">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="50"/>
@@ -90,42 +90,18 @@
                                                     <constraint firstItem="lTm-3c-ztm" firstAttribute="centerY" secondItem="I1e-s9-VyT" secondAttribute="centerY" id="kIc-7P-m3V"/>
                                                 </constraints>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BBi-DM-fs7">
-                                                <rect key="frame" x="0.0" y="140" width="390" height="70"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jg-Xy-QWx" customClass="buttonStyle" customModule="Travel_app_" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
-                                                        <color key="backgroundColor" red="1" green="0.66736791546998697" blue="0.062253050815550215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Login">
-                                                            <color key="titleColor" red="0.1072683707" green="0.1957857013" blue="0.19250011440000001" alpha="0.93795483729999996" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="Login_button:" destination="Xu8-6i-GdK" eventType="touchUpInside" id="H8t-Lo-NPh"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klN-8R-SQV" customClass="buttonStyle" customModule="Travel_app_" customModuleProvider="target">
-                                                        <rect key="frame" x="320" y="0.0" width="70" height="70"/>
-                                                        <color key="backgroundColor" red="0.1072683707" green="0.1957857013" blue="0.19250011440000001" alpha="0.93795483729999996" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="70" id="4NL-xB-g1R"/>
-                                                            <constraint firstAttribute="height" constant="70" id="8zd-o6-sKA"/>
-                                                        </constraints>
-                                                        <state key="normal" image="Screenshot_20230208_233848_Figma-removebg-preview (1)"/>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On Login With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYK-pH-GGh">
-                                        <rect key="frame" x="20" y="443" width="390" height="15"/>
+                                        <rect key="frame" x="20" y="481" width="390" height="15"/>
                                         <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rNm-ei-tNh">
-                                        <rect key="frame" x="30" y="488" width="370" height="70"/>
+                                        <rect key="frame" x="30" y="526" width="370" height="70"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wm-35-RtF" customClass="buttonStyle" customModule="Travel_app_" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wm-35-RtF" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="110" height="70"/>
                                                 <color key="backgroundColor" red="0.10588235294117647" green="0.19578570127487183" blue="0.19250011444091797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -137,12 +113,12 @@
                                                     <color key="titleColor" red="0.035294117647058823" green="0.0039215686274509803" blue="0.15294117647058825" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7k-LX-oYe" customClass="buttonStyle" customModule="Travel_app_" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7k-LX-oYe" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
                                                 <rect key="frame" x="130" y="0.0" width="110" height="70"/>
                                                 <color key="backgroundColor" red="0.1058823529" green="0.1957857013" blue="0.19250011440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="google-icon-logo-13-removebg-preview"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buv-5m-vsw" customClass="buttonStyle" customModule="Travel_app_" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buv-5m-vsw" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
                                                 <rect key="frame" x="260" y="0.0" width="110" height="70"/>
                                                 <color key="backgroundColor" red="0.1058823529" green="0.1957857013" blue="0.19250011440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
@@ -152,14 +128,14 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZ5-mG-OG0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZ5-mG-OG0" customClass="LableStyle" customModule="Travel_app_" customModuleProvider="target">
                                         <rect key="frame" x="20" y="100" width="390" height="43"/>
                                         <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="iDO-RS-4G8">
-                                        <rect key="frame" x="128.33333333333337" y="608" width="173.66666666666663" height="28"/>
+                                        <rect key="frame" x="128.33333333333337" y="646" width="173.66666666666663" height="28"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="On Login With" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyT-td-Khi">
                                                 <rect key="frame" x="0.0" y="6.6666666666666288" width="82.666666666666671" height="15"/>
@@ -180,7 +156,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVy-FZ-R40">
-                                        <rect key="frame" x="19.999999999999996" y="413" width="53.666666666666657" height="18"/>
+                                        <rect key="frame" x="19.999999999999996" y="333" width="53.666666666666657" height="18"/>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                         <color key="tintColor" red="1" green="0.66736791549999996" blue="0.062253050820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -193,24 +169,51 @@
                                             <action selector="on_saveInfo:" destination="Xu8-6i-GdK" eventType="touchUpInside" id="6uz-og-ofM"/>
                                         </connections>
                                     </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BBi-DM-fs7">
+                                        <rect key="frame" x="20" y="371" width="390" height="70"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jg-Xy-QWx" customClass="buttonStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="70"/>
+                                                <color key="backgroundColor" red="1" green="0.66736791546998697" blue="0.062253050815550215" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" red="0.1072683707" green="0.1957857013" blue="0.19250011440000001" alpha="0.93795483729999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Login_button:" destination="Xu8-6i-GdK" eventType="touchUpInside" id="H8t-Lo-NPh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klN-8R-SQV" customClass="ButtonColorStyle" customModule="Travel_app_" customModuleProvider="target">
+                                                <rect key="frame" x="320" y="0.0" width="70" height="70"/>
+                                                <color key="backgroundColor" red="0.1072683707" green="0.1957857013" blue="0.19250011440000001" alpha="0.93795483729999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="70" id="4NL-xB-g1R"/>
+                                                    <constraint firstAttribute="height" constant="70" id="8zd-o6-sKA"/>
+                                                </constraints>
+                                                <state key="normal" image="Screenshot_20230208_233848_Figma-removebg-preview (1)"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="BBi-DM-fs7" firstAttribute="leading" secondItem="Oqm-F7-wkD" secondAttribute="leading" id="08h-Bt-4a5"/>
+                                    <constraint firstItem="FVy-FZ-R40" firstAttribute="leading" secondItem="Oqm-F7-wkD" secondAttribute="leading" id="1Fm-Og-LNI"/>
+                                    <constraint firstItem="FVy-FZ-R40" firstAttribute="top" secondItem="Oqm-F7-wkD" secondAttribute="bottom" constant="20" id="2bV-WH-BLI"/>
                                     <constraint firstItem="rNm-ei-tNh" firstAttribute="centerX" secondItem="0N8-aY-rCf" secondAttribute="centerX" id="A0N-Z6-9s8"/>
                                     <constraint firstAttribute="trailing" secondItem="tZ5-mG-OG0" secondAttribute="trailing" constant="20" id="EJC-rw-5xN"/>
                                     <constraint firstAttribute="trailing" secondItem="Oqm-F7-wkD" secondAttribute="trailing" constant="20" id="MBE-Hg-SSa"/>
-                                    <constraint firstItem="FVy-FZ-R40" firstAttribute="top" secondItem="Oqm-F7-wkD" secondAttribute="bottom" constant="10" id="Nh9-oa-arL"/>
                                     <constraint firstAttribute="trailing" secondItem="lYK-pH-GGh" secondAttribute="trailing" constant="20" id="OWZ-v3-fHv"/>
                                     <constraint firstItem="tZ5-mG-OG0" firstAttribute="top" secondItem="0N8-aY-rCf" secondAttribute="top" constant="100" id="PBH-EW-N2A"/>
                                     <constraint firstItem="rNm-ei-tNh" firstAttribute="top" secondItem="lYK-pH-GGh" secondAttribute="bottom" constant="30" id="SGu-az-F1l"/>
-                                    <constraint firstItem="lYK-pH-GGh" firstAttribute="top" secondItem="Oqm-F7-wkD" secondAttribute="bottom" constant="40" id="SaG-bm-7Yj"/>
+                                    <constraint firstItem="BBi-DM-fs7" firstAttribute="trailing" secondItem="Oqm-F7-wkD" secondAttribute="trailing" id="bJU-fC-UUj"/>
                                     <constraint firstItem="iDO-RS-4G8" firstAttribute="top" secondItem="rNm-ei-tNh" secondAttribute="bottom" constant="50" id="c4B-aZ-8gb"/>
                                     <constraint firstItem="Oqm-F7-wkD" firstAttribute="leading" secondItem="0N8-aY-rCf" secondAttribute="leading" constant="20" id="cMw-Bv-UdJ"/>
                                     <constraint firstItem="iDO-RS-4G8" firstAttribute="centerX" secondItem="0N8-aY-rCf" secondAttribute="centerX" id="dcL-Al-U84"/>
+                                    <constraint firstItem="lYK-pH-GGh" firstAttribute="top" secondItem="BBi-DM-fs7" secondAttribute="bottom" constant="40" id="egd-W3-EOa"/>
+                                    <constraint firstItem="BBi-DM-fs7" firstAttribute="top" secondItem="FVy-FZ-R40" secondAttribute="bottom" constant="20" id="nYY-sI-Hm4"/>
                                     <constraint firstItem="Oqm-F7-wkD" firstAttribute="top" secondItem="tZ5-mG-OG0" secondAttribute="bottom" constant="50" id="oUL-bi-6gI"/>
                                     <constraint firstAttribute="bottom" secondItem="iDO-RS-4G8" secondAttribute="bottom" constant="30" id="s4w-7i-lZ0"/>
                                     <constraint firstItem="tZ5-mG-OG0" firstAttribute="leading" secondItem="0N8-aY-rCf" secondAttribute="leading" constant="20" id="u0P-tE-oAN"/>
-                                    <constraint firstItem="FVy-FZ-R40" firstAttribute="leading" secondItem="2jg-Xy-QWx" secondAttribute="leading" id="uZ5-Ta-703"/>
                                     <constraint firstItem="lYK-pH-GGh" firstAttribute="leading" secondItem="0N8-aY-rCf" secondAttribute="leading" constant="20" id="vFL-Mu-TXk"/>
                                 </constraints>
                             </view>
@@ -244,6 +247,7 @@
                         <outlet property="facebook_BUtton" destination="buv-5m-vsw" id="52t-lf-fe2"/>
                         <outlet property="google_Button" destination="h7k-LX-oYe" id="63j-v3-sCe"/>
                         <outlet property="imageTopView" destination="0N8-aY-rCf" id="m0D-eO-h4s"/>
+                        <outlet property="lable" destination="tZ5-mG-OG0" id="L5K-8L-AuY"/>
                         <outlet property="logIn_Button" destination="2jg-Xy-QWx" id="QK9-Ch-GHH"/>
                         <outlet property="password_textField" destination="lTm-3c-ztm" id="Lub-Zn-YDN"/>
                         <outlet property="saveInfo_button" destination="FVy-FZ-R40" id="hBe-1F-Grr"/>

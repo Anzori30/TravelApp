@@ -8,10 +8,7 @@
 import UIKit
 
 class buttonStyle: UIButton {
-    private let Button: UIButton = {
-        let button = UIButton()
-        return button
-    }()
+ 
     override init(frame: CGRect) {
         super.init(frame: frame)
         button()
@@ -23,6 +20,6 @@ class buttonStyle: UIButton {
     }
     func button() {
         layer.cornerRadius = 20
-        backgroundColor = .red
+        backgroundColor = UIColor(named: "ButtonColor_Orange")
     }
 }

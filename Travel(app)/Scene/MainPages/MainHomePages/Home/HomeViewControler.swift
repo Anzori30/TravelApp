@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewControler: UIViewController {
-   
+    let color = SettingPage()
     @IBOutlet weak var username: UILabel!
     @IBOutlet private weak var userImage: UIButton!
     @IBOutlet private weak var collection: UICollectionView!
@@ -20,12 +20,18 @@ class HomeViewControler: UIViewController {
         collection.dataSource = self
         collection.delegate = self
         collection.isPagingEnabled = true
-        // bottom borders
-        addBottomBorder(to: stackView)
     }
     override func viewWillAppear(_ animated: Bool) {
        //bacground color
+     
         bacgroundColor(view: view)
+        (self.tabBarController as? TabBarViewControler)?.start()
+        if let myString = UserDefaults.standard.string(forKey: "myKey") {
+            username.text = myString
+        } else {
+            username.text = "User"
+        }
+
     }
 
     

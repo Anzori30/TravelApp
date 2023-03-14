@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Login" translatesAutoresizingMaskIntoConstraints="NO" id="Ag7-z1-97V">
-                                <rect key="frame" x="0.0" y="-232" width="414" height="1128"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nv-yw-r3c" customClass="buttonStyle" customModule="Travel_app_" customModuleProvider="target">
                                 <rect key="frame" x="264" y="762" width="120" height="70"/>
@@ -40,6 +40,7 @@
                             <constraint firstItem="Ag7-z1-97V" firstAttribute="leading" secondItem="88z-T2-MEa" secondAttribute="leading" id="IRr-vA-w82"/>
                             <constraint firstItem="88z-T2-MEa" firstAttribute="bottom" secondItem="8Nv-yw-r3c" secondAttribute="bottom" constant="30" id="OcX-eI-fBf"/>
                             <constraint firstItem="88z-T2-MEa" firstAttribute="trailing" secondItem="Ag7-z1-97V" secondAttribute="trailing" id="ZXq-tO-oig"/>
+                            <constraint firstItem="Ag7-z1-97V" firstAttribute="top" secondItem="3X6-lC-Kq3" secondAttribute="top" id="j5t-sx-63Q"/>
                             <constraint firstItem="88z-T2-MEa" firstAttribute="trailing" secondItem="8Nv-yw-r3c" secondAttribute="trailing" constant="30" id="wdi-Us-F5D"/>
                         </constraints>
                     </view>

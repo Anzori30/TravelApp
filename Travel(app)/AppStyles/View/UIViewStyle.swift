@@ -23,19 +23,24 @@ class UIViewStyle: UIView {
         color()
     }
     func color() {
-       let defaults = UserDefaults.standard
+        let defaults = UserDefaults.standard
         let savedColor = defaults.string(forKey: "backgroundColor") ?? "white"
-        if savedColor == "0"{
-           backgroundColor = UIColor(red: 0.106, green: 0.196, blue: 0.196, alpha: 1)
+        
+        if savedColor == "0" {
+            backgroundColor =  UIColor(named: "BackGroundColor_Green")!
         }
-        else if savedColor == "1"{
-            backgroundColor = UIColor(red: 0.992, green: 0.91, blue: 0.816, alpha: 1)
+        else if savedColor == "1" {
+            backgroundColor =  UIColor(named: "BackGroundColor_Orange")!
         }
-        else{
-            backgroundColor = UIColor.systemBackground
+        else {
+            if HomeViewControler().traitCollection.userInterfaceStyle == .dark || LogInViewControler().traitCollection.userInterfaceStyle == .dark {
+                backgroundColor =  UIColor(named: "BackGroundColor_Green")!
+            } else {
+                  backgroundColor =  UIColor(named: "BackGroundColor_Orange")!
+            }
         }
-        let view = Bundle.main.loadNibNamed("common", owner: self, options: nil)?.first as! UIView
-              view.frame = self.bounds
-              self.addSubview(view)
+//        let view = Bundle.main.loadNibNamed("common", owner: self, options: nil)?.first as! UIView
+//              view.frame = self.bounds
+//              self.addSubview(view)
     }
 }

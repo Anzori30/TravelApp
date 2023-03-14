@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" momentary="YES" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lQX-1E-BBd">
-                                <rect key="frame" x="40" y="74" width="334" height="32"/>
+                                <rect key="frame" x="40" y="78" width="334" height="32"/>
                                 <segments>
                                     <segment title="Green"/>
                                     <segment title="Yellow"/>
@@ -27,7 +29,7 @@
                                     <action selector="colorControl:" destination="drO-mv-liv" eventType="valueChanged" id="bXj-Sk-Z6T"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMu-y2-u4r" customClass="buttonStyle" customModule="Travel_app_" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMu-y2-u4r" customClass="buttonStyle" customModule="Travel_app_" customModuleProvider="target">
                                 <rect key="frame" x="294" y="782" width="100" height="60"/>
                                 <color key="backgroundColor" red="0.61537814140000002" green="0.55896323920000002" blue="0.8882171512" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -39,20 +41,27 @@
                                     <action selector="save_button:" destination="drO-mv-liv" eventType="touchUpInside" id="o8u-LW-AhQ"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="C09-4o-1KW">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" red="0.36629476970000002" green="0.72628337139999999" blue="0.38060199259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wFA-Kk-LOu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lQX-1E-BBd" firstAttribute="leading" secondItem="wFA-Kk-LOu" secondAttribute="leading" constant="40" id="0hQ-yv-ymf"/>
                             <constraint firstItem="wFA-Kk-LOu" firstAttribute="bottom" secondItem="HMu-y2-u4r" secondAttribute="bottom" constant="20" id="NR6-Ly-VM0"/>
                             <constraint firstItem="lQX-1E-BBd" firstAttribute="centerX" secondItem="BC0-9s-8qs" secondAttribute="centerX" id="Oe8-fA-BY9"/>
+                            <constraint firstItem="C09-4o-1KW" firstAttribute="centerX" secondItem="BC0-9s-8qs" secondAttribute="centerX" id="TeH-sB-aS5"/>
+                            <constraint firstItem="C09-4o-1KW" firstAttribute="centerY" secondItem="BC0-9s-8qs" secondAttribute="centerY" id="eI5-o8-0sG"/>
                             <constraint firstItem="wFA-Kk-LOu" firstAttribute="trailing" secondItem="HMu-y2-u4r" secondAttribute="trailing" constant="20" id="jSd-Ff-c3j"/>
                             <constraint firstItem="wFA-Kk-LOu" firstAttribute="trailing" secondItem="lQX-1E-BBd" secondAttribute="trailing" constant="40" id="m8i-yL-CMR"/>
                             <constraint firstItem="lQX-1E-BBd" firstAttribute="top" secondItem="wFA-Kk-LOu" secondAttribute="top" constant="30" id="snj-mb-tnz"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="wFA-Kk-LOu"/>
                     </view>
                     <connections>
                         <outlet property="saveButton" destination="HMu-y2-u4r" id="Xu7-yi-t1E"/>
+                        <outlet property="spiner" destination="C09-4o-1KW" id="xD9-kL-DOY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="65m-vp-Nxc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -60,4 +69,9 @@
             <point key="canvasLocation" x="-410" y="154"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

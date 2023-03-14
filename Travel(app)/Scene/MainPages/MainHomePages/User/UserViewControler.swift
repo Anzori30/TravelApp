@@ -9,16 +9,19 @@
 import UIKit
 
 class UserViewControler: UIViewController {
+    @IBOutlet weak var user_nameLable: UILabel!
     @IBOutlet weak var loaderSpiner: UIActivityIndicatorView!
     let listName = [
     Setting(listName: "Your Profile"),
+    Setting(listName: "Your Posts"),
      Setting(listName: "Booking List"),
-     Setting(listName: "Promotion"),
+     Setting(listName: "Creat Booking"),
      Setting(listName: "payment"),
      Setting(listName: "Setting"),
      Setting(listName: "Logout"),
     ]
   
+    
     @IBOutlet private weak var userImage: UIButton!
     @IBOutlet private weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -26,10 +29,15 @@ class UserViewControler: UIViewController {
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         tableView.dataSource = self
         tableView.delegate = self
-       
+        if let myString = UserDefaults.standard.string(forKey: "myKey") {
+            user_nameLable.text = myString
+        } else {
+            user_nameLable.text = "User"
+        }
     }
     override func viewDidAppear(_ animated: Bool) {
         bacgroundColor(view: view)
+        (self.tabBarController as? TabBarViewControler)?.start()
     }
   
 }
@@ -56,14 +64,26 @@ extension UserViewControler: UITableViewDelegate{
             navigationController?.pushViewController(vc, animated: true)
         }
         if value.listName == "Logout"{
-            
-            UserDefaults.standard.set(false, forKey: "isLogined")
-            loaderSpiner.startAnimating()
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                self.loaderSpiner.stopAnimating()
-                (self.tabBarController as? TabBarViewControler)?.logout()
-                }
-            
+            LogOut()
         }
+        if value.listName == "Creat Booking"{
+            let vc = UIStoryboard(name: "CreatBookingViewController", bundle: nil).instantiateViewController(withIdentifier: "CreatBookingViewController") as! CreatBookingViewController
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        if value.listName == "Your Profile"{
+            let vc = UIStoryboard(name: "UserInfoViewController", bundle: nil).instantiateViewController(withIdentifier: "UserInfoViewController") as!  UserInfoViewController
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    
+    
+    func LogOut(){
+        UserDefaults.standard.set(false, forKey: "isLogined")
+        loaderSpiner.startAnimating()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.loaderSpiner.stopAnimating()
+            (self.tabBarController as? TabBarViewControler)?.logout()
+         }
     }
 }

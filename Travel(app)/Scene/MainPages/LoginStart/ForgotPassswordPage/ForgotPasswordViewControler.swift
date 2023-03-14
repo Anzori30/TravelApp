@@ -28,7 +28,6 @@ class ForgotPasswordViewControler: UIViewController {
     @IBAction func SendCode(_ sender: Any){
         let auth = Auth.auth()
         auth.sendPasswordReset(withEmail: emailField.text!) { error in
-            
             if let error = error{
                 self.present(AlertController.creatalert(title: "", message: error.localizedDescription), animated: true)
             }
